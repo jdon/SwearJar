@@ -1,0 +1,14 @@
+# SwearJar Config
+# Warning: "aggressive" may generate false positives
+Fine: 10
+aggressive: false
+swears:
+- fuck
+- shit
+- crap
+- wank
+- cunt
+- crap
+- ass
+exception:
+- glass

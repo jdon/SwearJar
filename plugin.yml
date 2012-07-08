@@ -1,0 +1,16 @@
+name: Swearjar
+description: Swearjar
+main:  me.jdon.ludus.swear.LudusSwear
+author: nd567
+version: 1.2
+depend: [Vault]
+commands:
+  swearjar:
+    description: Main command for swearjar
+    usage: /SwearJar
+    aliases: sj
+permissions:
+  sj.admin:
+    default: op
+  sj.exempt:
+    default: false
