@@ -2,7 +2,7 @@ name: Swearjar
 description: Swearjar
 main:  me.jdon.ludus.swear.LudusSwear
 author: nd567
-version: 1.2
+version: 1.4
 depend: [Vault]
 commands:
   swearjar:

@@ -1,7 +1,11 @@
 # SwearJar Config
 # Warning: "aggressive" may generate false positives
+# DisableSwearing, will stop swearing all together even if a player pays or not.
+# commandChecking, will check all commands for swears.
 Fine: 10
 aggressive: false
+DisableSwearing: false
+commandChecking: false
 swears:
 - fuck
 - shit
