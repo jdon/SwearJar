@@ -18,16 +18,16 @@ import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class LudusSwear extends JavaPlugin implements Listener{
-	
+
 	//Variables
-	
-		Logger log = Logger.getLogger("Minecraft.LudusCraft");
+
+		Logger log = Logger.getLogger("Minecraft.swearjar");
 		public static Economy economy = null;
 		public static String tag = ChatColor.BLUE + "[" + ChatColor.AQUA + "Swearjar" + ChatColor.BLUE + "]" + ChatColor.YELLOW + " ";
 		public static String linetag = ChatColor.YELLOW+"=================="+tag+"==================";
 		public static String line = ChatColor.YELLOW+"==============================================";
-		
-		
+
+
 	public void onEnable() {
 		//register events in this class
 		getServer().getPluginManager().registerEvents(this, this);
@@ -42,7 +42,7 @@ public class LudusSwear extends JavaPlugin implements Listener{
 		// print to the console that the plugin in enabled
 		log.info("[Swearjar] has been Enabled!");
 	}
-	
+
 	// lowest event priority to stop lagg
 	 @EventHandler(priority = EventPriority.LOWEST)
 	 public void chat(final AsyncPlayerChatEvent  ev) {
@@ -183,10 +183,10 @@ public class LudusSwear extends JavaPlugin implements Listener{
 			if (economyProvider != null) {
 				economy = economyProvider.getProvider();
 			}
-			
+
 			return (economy != null);
 		}
-		
+
 		public static String getFinalArg(final String[] args, final int start)
 		{
 			final StringBuilder bldr = new StringBuilder();
@@ -359,7 +359,7 @@ public class LudusSwear extends JavaPlugin implements Listener{
 			}
 			return false;
 			}
-		
+
 		public static String removeDups(String s)
 		{
 		    if ( s.length() <= 1 ) return s;
@@ -467,5 +467,5 @@ public class LudusSwear extends JavaPlugin implements Listener{
 	    }
 	   }
 		}
-	
+
 }

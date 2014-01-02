@@ -1,8 +1,8 @@
 name: Swearjar
 description: Swearjar
 main:  me.jdon.ludus.swear.LudusSwear
-author: nd567
-version: 1.4
+author: jdon
+version: 1.5
 depend: [Vault]
 commands:
   swearjar:
